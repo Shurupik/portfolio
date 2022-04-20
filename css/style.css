@@ -1,0 +1,71 @@
+body{
+    background-image: url("../img/escheresque_ste.png");
+
+
+}
+.dws-menu{
+    background-color: dimgray;
+    margin-top: 100px;
+    width: 100%;
+}
+ul.dws-ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+li.dws-li{
+    list-style: none;
+    padding: 10px;
+    }
+li.dws-li a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#000;
+    }
+li.dws-li a i{
+    margin-right: 10px;
+}
+li.dws-li a::before{
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+li.dws-li a::after{
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+}
+li.dws-li:hover{
+    background-color: white;
+}
+li.dws-li:hover a::before{
+    width: 50%;
+    transform: translateX(100%);
+}
+li.dws-li:hover a::after {
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
